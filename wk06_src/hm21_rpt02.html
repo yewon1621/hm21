@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+	<head>
+		<!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+		<meta charset="utf-8">
+		<title>hm21 : CSS3 advanced</title>
+		<style>
+            div {
+                display : inline-block;
+                position : absolute; /* 절대 배치 */
+                border : 1px solid lightgray;
+                border-image: url("media/xrrr.jpg")round;
+                
+            }
+            img{position:absolute}
+            
+            div > p {
+                display : inline-block; /* div의 자식 p */
+                position : absolute; /* 절대 배치 */
+                height : 20px;
+                width : 15px;
+                background : yellow;
+            }
+
+			#fix {
+				position: fix;
+				bottom: 5px;
+				right: 10px;
+				width: 100px;
+				padding: 5px;
+				background: yellow;
+				color: black;
+			}
+            
+            span {
+                transition : font-size 3s;
+            }
+            span:hover {
+                font-size :500%;
+            }
+		</style>
+		<script></script>
+	</head>
+
+	<body>
+		<!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+		<h3>Merry Christmas!</h3>
+		<hr>
+        <audio src="media/02%20Let%20It%20Snow%20Let%20It%20Snow%20Let%20It%20Snow.MP3" controls autoplay loop></audio>
+        <p><span>Happy</span></p>
+        <div>
+        <img src="media/xrrr.jpg" width="300" height="300" alt="테두리">
+        
+        </div>
+        <div>
+		<img src="media/christmastree.png"
+		width="300" height="300"
+		alt="크리스마스 트리"  >
+           <img src="media/rororo.PNG" width="50" height="50" alt="장식1" style="left: 90px; top:110px">
+            <img src="media/snow.PNG" width="50" height="50" alt="장식1" style="left: 50px; top:200px">
+           <p style="left:100px; top:30px">M</p>
+           <p style="left:120px; top:50px">E</p>
+           <p style="left:140px; top:70px">R</p>
+           <p style="left:160px; top:90px">R</p>
+           <p style="left:180px; top:110px">Y</p>
+           <p style="left:160px; top:130px">X</p>
+           <p style="left:140px; top:150px">-</p>
+           <p style="left:160px; top:170px">M</p>
+           <p style="left:180px; top:190px">A</p>
+           <p style="left:200px; top:210px">S</p>
+           
+        </div>
+        <div id="fix">
+			hm21  김예원
+		</div>
+
+	</body>
+
+</html>
+

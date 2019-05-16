@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>new Object()로 사용자 객체 만들기</title>
+    <script>
+      function fill() {
+        return (this.amount += 1);
+      }
+      function consume() {
+        return (this.amount -= 1);
+      }
+      // 사용자 객체 만들기
+      var box = new Object();
+      box.color = "red";
+      box.size = 10;
+      box.amount = 0;
+      box.fill = fill;
+      box.consume = consume;
+    </script>
+  </head>
+  <body>
+    <h3>new Object()로 사용자 객체 만들기</h3>
+    <hr />
+    <script>
+            // 객체 활용
+      document.body.style.backgroundColor="lightblue";
+
+      var user=prompt("깜짝퀴즈 !! 박스의 초기 amount 값을 예측해 보세요!",0);
+      if(user==null)
+      {
+        document.write("프로그램 종료");
+      }
+      else{
+        document.write("box : ");
+      document.write(box.color + ", ");
+      document.write(box.size + ", ");
+      document.write(box.amount + "<br>"+"<hr>");
+      document.write("box color : red"+"<br>");
+      document.write("box  size : 10"+"<br>");
+      document.write("box amount : 0"+"<br>"+"<hr>");
+      box.fill();
+      document.write("amount 프로퍼티 값 호출" + box.fill() + "<br>");
+      box.consume();
+      document.write("amount 프로퍼티 값 호출" + box.consume() + "<br>"+"<hr>");
+        if(user==0)
+           document.write("정답입니다.")
+        else
+           document.write("깜짝 퀴즈 결과!!"+"<br>"+"아닙니다. 정답은 0 입니다.")
+      }
+      
+    </script>
+  </body>
+</html>

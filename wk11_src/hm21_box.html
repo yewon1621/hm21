@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>new Object()로 사용자 객체 만들기</title>
+    <script>
+      function fill() {
+        return (this.amount += 2);
+      }
+      function consume() {
+        return (this.amount -= 2);
+      }
+      // 사용자 객체 만들기
+      var box = new Object();
+      box.color = "red";
+      box.size = 10;
+      box.amount = 0;
+      box.fill = fill;
+      box.consume = consume;
+    </script>
+  </head>
+  <body>
+    <h3>new Object()로 사용자 객체 만들기</h3>
+    <hr />
+    <script>
+      // 객체 활용
+      document.write("box : ");
+      document.write(box.color + ", ");
+      document.write(box.size + ", ");
+      document.write(box.amount + "<br>");
+
+      box.fill(1000);
+      document.write("amount 프로퍼티 값" + box.fill() + "<br>");
+      box.consume(5000);
+      document.write("amount 프로퍼티 값" + box.consume() + "<br>");
+    </script>
+  </body>
+</html>

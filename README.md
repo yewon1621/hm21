@@ -56,5 +56,14 @@ html5 class
    -  기본 객체(코어 객체)의 종류에 대해 배움.
    -  자바스크립트를 이용하여 배열을 만듬.
    -  사용자 객체 만듬.
+-  wk12 upload
+   -  29개 파일 올림.
+   -  DOM 개요 배움.
+   -  DOM, document 객체 배움.
+   -  HTML 문서의 동적 구성 배움.
+   -  브라우저 관련 객체 배움.
+   -  window의 타이머 활용.
+   -  window 객체 배우고 활용함.
+   -  location, navigator, screen, history 객체 배움.
 
 

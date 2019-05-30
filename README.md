@@ -65,5 +65,14 @@ html5 class
    -  window의 타이머 활용.
    -  window 객체 배우고 활용함.
    -  location, navigator, screen, history 객체 배움.
+-  wk13 upload
+   -  43개 파일 올림.
+   -  이벤트에 대해 배움.
+   -  이벤트 리스너 작성함.
+   -  마우스 관련 이벤트 배움.
+   -  onload 리스너 배움.
+   -  폼에 발생하는 이벤트 배움.
+   -  키 관련 이벤트 배움.
+
 
 

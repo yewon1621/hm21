@@ -66,7 +66,7 @@ html5 class
    -  window 객체 배우고 활용함.
    -  location, navigator, screen, history 객체 배움.
 -  wk13 upload
-   -  43개 파일 올림.
+   -  42개 파일 올림.
    -  이벤트에 대해 배움.
    -  이벤트 리스너 작성함.
    -  마우스 관련 이벤트 배움.

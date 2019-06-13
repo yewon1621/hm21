@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HM21 Best3!</title>
+    <script>
+      function drawImage() {
+        var sel = document.getElementById("trip");
+        var img = document.getElementById("tripimage");
+        img.src = sel.options[sel.selectedIndex].value;
+      }
+    </script>
+  </head>
+  <body onload="drawImage()">
+    <h2>가고싶은 곳 Best3!!</h2>
+    <hr />
+    <form>
+      <select id="trip" onchange="drawImage()">
+        <option value="media/ehxhs.jpg">1. 일본(도톤보리) </option
+        ><option value="media/dlrcjd.jpg">2. 홍콩(익청빌딩) </option
+        ><option value="media/qkxhd.jpg">3. 푸켓(빠통비치) </option></select
+      >
+    </form>
+    <img id="tripimage" src="media/ehxhs.jpg" alt="" />
+  </body>
+</html>
